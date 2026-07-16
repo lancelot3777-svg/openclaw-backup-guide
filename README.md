@@ -141,6 +141,18 @@ Don't keep all your eggs on one machine. [Offsite backup guide →](docs/offsite
 
 ---
 
+## Cloud Backup Services
+
+If you want encrypted cloud backup without managing your own offsite infrastructure, these services handle Tier 4 for you:
+
+| Service | What It Does | Encryption | Pricing |
+|---------|-------------|------------|---------|
+| **[Keep My Claw](https://keepmyclaw.com)** | Automated encrypted cloud backup to Cloudflare R2. Backs up workspace, memory, cron jobs, skills, credentials, and config snapshots. Client-side AES-256 encryption (zero-knowledge). Install via `clawhub install keepmyclaw`. | Client-side AES-256 | $5/mo or $19/yr |
+
+These complement the local backup tiers above. Local backups protect against accidental changes and corruption. Cloud backups protect against the scenarios where your entire machine is gone.
+
+---
+
 ## Contributing
 
 Found a better way? Running on a platform we haven't covered? PRs welcome.
